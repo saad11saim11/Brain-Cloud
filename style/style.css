@@ -1,0 +1,353 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, figure, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	color: #666;
+	font-size: 15px;
+	line-height: 26px;
+	background: transparent;
+	box-sizing:border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p {
+	margin-bottom:15px;
+}
+.clear {
+	clear: both;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:#0d0d0f;
+	font-family: 'Montserrat', sans-serif;
+}
+a
+{
+	text-decoration: none;
+}
+/* End hide from IE Mac */
+.none {
+	display: none;
+}
+/* End Clearfix */
+/* General Setup
+/*-----------------------------------------------------------------------------------*/
+.container{
+	width: 97%;
+	margin: 0 auto;
+}
+header{
+	padding: 5px 0;
+	box-shadow: 0 4px 2px -2px #eff0f1;
+}
+header nav ul li{
+	display: inline;
+	vertical-align: middle;
+}
+header nav {
+	float: left;
+	padding: 11px 11px 0 11px;
+	    margin-right: 74px;
+}
+header nav ul li a{
+	font-size: 15px;
+	font-weight: 600;
+	padding: 10px;
+	text-decoration: none;
+
+}
+
+header .logo{
+	float: left;
+}
+header .top-icons{
+	float: left;
+	padding: 11px 0;
+}
+header .top-icons ul li{
+	display: inline;
+}
+header .top-icons ul li a{
+font-size: 15px;
+	font-weight: 600;
+	padding: 11px;
+	text-decoration: none;
+}
+header .profile img {
+       width: 41px;
+}
+header .profile ul li{
+	display: inline;
+	    vertical-align: middle;
+}
+header .profile ul li a{
+	font-size: 15px;
+	font-weight: 600;
+	padding: 10px;
+	text-decoration: none;
+}
+header nav ul .people
+{
+	border-bottom: 4px solid #57d3e3;
+    padding-bottom: 19px;
+}
+i.fa.fa-search {
+	color: #57d3e3;
+    box-shadow: 0 0 5px 2px  #eff0f1;
+    padding: 7px;
+}
+.new-contact a {
+    background: #57d3e3;
+    color: white;
+    border-radius: 6px;
+}
+li.select {
+    border: 1px solid #57d3e3;
+    padding: 10px;
+    border-radius: 6px;
+}
+.select i {
+	    font-size: 16px;
+    font-weight: bold;
+	color:  #57d3e3;
+}
+li.todo {
+    border: 1px solid #57d3e3;
+    padding: 10px;
+    border-radius: 6px;
+}
+.todo i {
+    font-weight: bold;
+    color: white;
+    background: #2bda9b;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 25px;
+}
+li.documents {
+    border: 1px solid #57d3e3;
+    padding: 10px;
+    border-radius: 6px;
+}
+li.documents i{
+	  font-size: 16px;
+    font-weight: bold;
+	color:  #57d3e3;
+}
+aside {
+    box-shadow: 10px 0 5px -4px #eff0f1;
+    width: 13%;
+    padding: 20px 30px;
+        float: left;
+}
+.lastest {
+    margin-bottom: 22px;
+}
+.public-groups {
+    margin-bottom: 22px;
+}
+.public-groups h3{
+	padding-bottom: 10px;
+}
+.public-groups h3 span {
+    color: white;
+    background: orange;
+    border-radius: 25px;
+    padding: 4px;
+}
+.private-groups h3 span {
+    color: white;
+    background: #6fa5eb;
+    border-radius: 25px;
+    padding: 4px;
+}
+.private-groups h3 {
+	padding-bottom: 10px;
+}
+.public-groups ul li{
+	margin-bottom: 7px;
+}
+.private-groups ul li{
+	margin-bottom: 7px;
+}
+a.gropu-one {
+    background: #6fa5eb;
+    color: white;
+    padding: 5px 11px;
+    border-radius: 25px;
+}
+a.gropu-two {
+    background: #ee543c;
+    color: white;
+    padding: 5px 11px;
+    border-radius: 25px;
+}
+a.gropu-three {
+    background: #f89c44;
+    color: white;
+    padding: 5px 11px;
+    border-radius: 25px;
+}
+
+a.gropu-one span {
+    margin-left: 45px;
+    color: white;
+}
+a.gropu-two  span {
+    margin-left: 45px;
+    color: white;
+}
+a.gropu-three span {
+    margin-left: 45px;
+    color: white;
+}
+a.create-new-privtate-chat {
+    border: 1px solid #57d3e3;
+    padding: 5px 50px 5px 9px;
+    border-radius: 26px;
+}
+.more i {
+    font-size: 16px;
+    font-weight: bold;
+    color: #57d3e3;
+}
+i.fa.fa-angle-down{
+    font-size: 16px;
+    font-weight: bold;
+    color: #57d3e3;
+}
+.main .container {
+    width: 100%;
+}
+.main{
+	background: #f8f9f9;
+	    float: left;
+	       width: 82.5%;
+	    
+}
+.main nav ul li{
+	display: inline;
+}
+.main nav ul li a{
+	padding:20px 7px 20px 20px;
+	    display: inline-block;
+}
+.main .user-profiles ul li{
+	    float: left;
+	    position: relative;
+	    padding: 15px 37px;
+	    background: white;
+	    margin:10px;
+	    border-radius: 15px;
+	    box-shadow: 0 0 5px 2px #eff0f1;
+    
+}
+.user-profiles{
+
+}
+.user-profiles img{
+    width: 80px;
+}
+.user-profiles h4{
+	text-align: center;
+}
+.user-profiles h5{
+	text-align: center;
+}
+.user-profiles p{
+	text-align: center;
+}
+.footer-navigation {
+    float: left;
+    padding: 15px;
+    background: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.listt i.fa.fa-list {
+    border: 2px solid #57d3e3;
+    padding: 10px;
+    color: #57d3e3;
+    font-size: 21px;
+}
+i.fa.fa-th {
+    background: #57d3e3;
+    color: white;
+     padding: 12px;
+     font-size: 21px;
+}
+.footer-navigation ul li {
+	float: left;
+	margin-right: 15px;
+}
+.same{
+	padding:12px;
+}
+.checkbox
+{
+    position: absolute;
+    left: 1px;
+    background: white;
+    background: #666666;
+    color: #ffffff;
+    font-size: 19px;
+    zoom: 1.5;
+}
+
+.user-profiles ul li {
+    text-align: center;
+}
+i.fa.fa-minus {
+    background: #57d3e3;
+    color: white;
+    padding: 12px;
+    font-size: 21px;
+    cursor: pointer;
+}
+i.fa.fa-plus{
+    background: #57d3e3;
+    color: white;
+    padding: 12px;
+    font-size: 21px;
+    cursor: pointer;
+}
+a#minusBtn {
+    margin-left: 260px;
+}
+
+
+
+
+
+

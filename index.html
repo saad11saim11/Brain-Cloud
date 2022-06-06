@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brain Cloud</title>
+<script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+        var currFFZoom = 1;
+        var currIEZoom = 100;
+
+        function plus(){
+            
+                var step = 0.02;
+                currFFZoom += step;
+                $('.user-profiles').css('MozTransform','scale(' + currFFZoom + ')');
+                var stepie = 2;
+                currIEZoom += stepie;
+                $('.user-profiles').css('zoom', ' ' + currIEZoom + '%');
+
+        };
+        function minus(){
+          
+                var step = 0.02;
+                currFFZoom -= step;
+                $('.user-profiles').css('MozTransform','scale(' + currFFZoom + ')');
+                var stepie = 2;
+                currIEZoom -= stepie;
+                $('.user-profiles').css('zoom', ' ' + currIEZoom + '%');
+        };
+    </script></head>
+
+<body>
+<header>
+  <div class="container">
+      <div class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
+      <nav>
+        <ul>
+          <li class="people"><a href="#">People</a></li>
+          <li><a href="#">Companies </a></li>
+          <li><a href="#">Groups</a></li>
+         
+        </ul>
+      </nav>
+      <div class="top-icons">
+        <ul>
+           <li class="header-search"><a href="#"><i class="fa fa-search"></i></a></li>
+          <li class="new-contact"><a href="#">New contact</a></li>
+          <li class="select"><a href="#">Select <i class="fa fa-angle-down"></i></a></li>
+          <li class="todo"><a href="#">ToDos <i class="fa fa-tasks"></i></a></li>
+          <li class="documents" style="margin-right: 35px;"><a href="#">Documents <i class="fa fa-file"></i></a></li>
+          <li class="date"><a href="#">16 Dec</a></li> 
+        </ul>
+        
+      </div>
+      <div class="profile">
+          <ul>
+            <li class="profile-name"><a href="#">Saim</a> </li>
+          <li><img src="images/profile.png"></li>
+          </ul>
+        </div>
+    </div>
+</header>
+
+                      <!-- Side bar -->
+
+<aside>
+  <div class="container">
+    <div class="lastest">
+    <h3> Lastest</h3>
+     <ul class="filter-year">
+        <li><a href="">This Week (0)</a></li>
+        <li><a href="">This Month (23)</a></li>
+        <li><a href="">Last Three Month (323)</a></li>
+        <li><a href="">This Year (3434)</a></li>
+     </ul>
+  </div>
+  
+  <div class="public-groups">
+    <h3> Public Groups <span>200</span></h3>
+    <ul class="filter-year">
+        <li><a class="gropu-one" href="">Group 1 <span>20</span></a></li>
+        <li><a class="gropu-one" href="">Group 2<span>20</span></a></li>
+        <li><a class="gropu-two" href="">Group 3<span>20</span></a></li>
+         <li><a class="gropu-three" href="">Group 6<span>20</span></a></li>
+        <li><a class="gropu-two" href="">Group 4<span>20</span></a></li>
+        <li><a class="gropu-three" href="">Group 5<span>20</span></a></li>
+        <li><a class="create-new-privtate-chat" href="">Create New</a></li>
+        <li><a href="" class="more"><i class="fa fa-angle-down"></i> More  </a></li>
+     </ul>
+     
+  </div>
+
+    <div class="private-groups">
+    <h3>Private Groups <span>2456</span></h3>
+     <ul class="filter-year">
+        <li><a class="gropu-one" href="">Group 1 <span>20</span></a></li>
+        <li><a class="gropu-one" href="">Group 2<span>20</span></a></li>
+         <li><a class="gropu-one" href="">Group 2<span>20</span></a></li>
+        <li><a class="gropu-two" href="">Group 3<span>20</span></a></li>
+         <li><a class="gropu-three" href="">Group 6<span>20</span></a></li>
+        <li><a class="gropu-two" href="">Group 4<span>20</span></a></li>
+        <li><a class="create-new-privtate-chat" href="">Create New</a></li>
+        <li><a href="" class="more"><i class="fa fa-angle-down"></i> More  </a></li>
+     </ul>
+  </div>
+  </div>
+</aside>
+
+<!-- Main -->
+
+<div class="main">
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href=""><input type="checkbox" name=""></a></li>
+        <li><a href="">Name <i class="fa fa-angle-down"></i></a></li>
+        <li><a href="">Last Name <i class="fa fa-angle-down"></i></a></li>
+        <li><a href="">Tag <i class="fa fa-angle-down"></i></a></li>
+        <li><a href="">Group <i class="fa fa-angle-down"></i></a></li>
+        <li><a href="">Company<i class="fa fa-angle-down"></i></a></li>
+        <li><a href="">Business Line <i class="fa fa-angle-down"></i></a></li>
+        <li><a href="">Function <i class="fa fa-angle-down"></i></a></li>
+        <li><a href="">Network <i class="fa fa-angle-down"></i></a></li>
+        <li><a href="">Age <i class="fa fa-angle-down"></i></a></li>
+        <li><a href="">Calender <i class="fa fa-angle-down"></i></a></li>
+        <li><a href="">Todo<i class="fa fa-angle-down"></i></a></li>
+      </ul>
+    </nav>
+    <div class="user-profiles">
+      <ul id="map">
+        <li >
+          <input class="checkbox" type="checkbox" name=""> <span class="checkmark"></span>
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li >
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li >
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+         <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+           <li>
+            <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+           <li>
+            <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+           <li>
+            <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+           <li>
+            <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+           <li>
+            <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+           <li>
+            <input class="checkbox" type="checkbox" name="">
+          <img src="images/profile.png">
+          <h4>Will Devis</h4>
+          <h5> Programmer </h5>
+          <p>Data Sceince</p>
+        </li>
+      </ul>      
+    </div>
+  </div>
+
+
+
+  <div class="footer-navigation">
+    <ul>
+      <li>
+        <a class="listt" href=""><i class="fa fa-list"></i><i class="fa fa-th"></i></a>
+      </li>
+      <li><a href="" ><i  class="fa fa-arrow-right same"></i>Selected</a></li>
+      <li><a  href=""><i class="fa fa-hourglass same"></i> Filter Results</a></li>
+      <li>
+        <a href="" ><i l class="fa fa-list same"></i>Total Results 433</a>
+      </li>
+      <li><a id="minusBtn" onclick="minus()"><i class="fa fa-minus"></i></a></li>
+      <li> <a id="plusBtn" onclick="plus()"><i class="fa fa-plus"></i></a></li>
+    </ul>
+     
+                       
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
